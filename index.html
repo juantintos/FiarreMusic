@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fiarre Music</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <div id="header"></div>
+
+  <main>
+    <section class="hero">
+      <div class="carousel-container">
+        <div class="carousel-track">
+          <div class="carousel-slide"><img src="img.png" alt="Imagen 1"></div>
+          <div class="carousel-slide"><img src="img.png" alt="Imagen 2"></div>
+          <div class="carousel-slide"><img src="img.png" alt="Imagen 3"></div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)"><i class="fas fa-chevron-left"></i></button>
+        <button class="next" onclick="moveSlide(1)"><i class="fas fa-chevron-right"></i></button>
+      </div>
+      <div class="dots-container">
+        <span class="dot active" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+    </section>
+
+    <section class="intro reveal">
+      <h1>Tu destino para la mejor música </h1>
+      <p>Descubre artistas, lanzamientos y todo lo que necesitas para vibrar al ritmo de la música .</p>
+      <a href="artistas.html" class="btn">Conoce a nuestros artistas</a>
+      <a href="acerca.html" class="btn">Conoce sobre nosotros</a>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+  <script src="carrusel.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
+
