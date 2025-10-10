@@ -1,0 +1,30 @@
+.page-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 80vh;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.about-section h1 {
+  font-size: 2.5rem;
+  color: #FFD700;
+  text-shadow: 1px 1px 5px #000;
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s forwards;
+}
+
+.about-section p {
+  font-size: 1.2rem;
+  color: #ccc;
+  max-width: 700px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s forwards 0.2s;
+}
